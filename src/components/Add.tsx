@@ -1,11 +1,14 @@
 
 const Add = () => {
-    function addNumbers(n:number ,m:number):number{
-        return n+m;
-    }
+  const numbers: number [] = [1,1,2,3,4,2]
   return (
     <div>
-      hiii{addNumbers(2,2)}
+      {numbers.map((num)=>(
+        <ul key={num}>
+          <li>this is {num}</li>
+        </ul>
+      )
+      )}
     </div>
   )
 }
